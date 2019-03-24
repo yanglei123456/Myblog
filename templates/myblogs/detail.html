@@ -1,0 +1,19 @@
+{% extends 'myblogs/base.html' %}
+{% block content %}
+
+<body bgcolor = "#eeeeee">
+	
+   
+    	<li><a>标题：{{m.title}} </a>---发表时间：{{m.pub_date}}</li>
+    	正文：<br>
+    	&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+{{m.body}}
+    <hr>
+    <h3> {{ now }}</h3>
+</body>
+{% endblock content %}
+</html>

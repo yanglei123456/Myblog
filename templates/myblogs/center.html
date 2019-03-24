@@ -1,0 +1,11 @@
+{% extends 'myblogs/base.html' %}
+{% block content %}
+	{{username}}
+
+    {% for a in b %}
+    	<li>标题：<a href="/detail{{a.id}}">{{a.title}} </a>---发表时间：{{a.pub_date}} <br/>正文：{{a.body}}</li><hr>
+    	
+    {% endfor %}
+    <h3> {{ now }}</h3>
+    <a href="/create">新建一篇博客</a>
+{% endblock content %}
